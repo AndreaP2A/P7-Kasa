@@ -1,1 +1,7 @@
-// Importer les composants ici (plus tard)
+import "./_home.scss";
+
+function Home() {
+  return <div>.</div>;
+}
+
+export default Home;
