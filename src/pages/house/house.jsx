@@ -7,13 +7,15 @@ function House() {
   const { id } = useParams();
   const navigate = useNavigate();
 
+  // REDIRECTING TO ERROR404 PAGE IF HOUSE (id) DOES NOT EXIST
   useEffect(() => {
     const house = getHouseById(id);
     if (!house) {
       navigate("/error404");
     }
   }, [id, navigate]);
-  return <div>.</div>;
+
+  return <div className="house"></div>;
 }
 
 export default House;
