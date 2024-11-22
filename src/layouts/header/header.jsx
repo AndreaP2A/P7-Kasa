@@ -10,10 +10,10 @@ function Header() {
       <nav className="header_navbar">
         <ul>
           <li>
-            <a href="/home">Accueil</a>
+            <a href="/home">ACCUEIL</a>
           </li>
           <li>
-            <a href="/about">A propos</a>
+            <a href="/about">A PROPOS</a>
           </li>
         </ul>
       </nav>

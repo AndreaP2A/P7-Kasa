@@ -4,9 +4,35 @@
   align-items: center;
   padding: 45px 100px 0px 100px;
 
+  @media screen and (max-width: 1024px) {
+    padding: 30px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 40px 26px 20px 26px;
+  }
+
+  @media screen and (max-width: 400px) {
+    padding: 25px 25px 0 25px;
+  }
+
   &_logo {
     width: 210.322px;
-    height: 68px;
+    @media screen and (max-width: 768px) {
+      width: 145px;
+    }
+    @media screen and (max-width: 400px) {
+      width: 125px;
+    }
+
+    & img {
+      @media screen and (max-width: 768px) {
+        width: 145px;
+      }
+      @media screen and (max-width: 400px) {
+        width: 125px;
+      }
+    }
   }
 
   &_navbar ul {
@@ -20,9 +46,23 @@
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+      gap: 35px;
+    }
+
+    @media screen and (max-width: 500px) {
+      font-size: 12px;
+      gap: 18px;
+    }
   }
 
   & li {
     list-style: none;
+
+    a {
+      text-decoration: none;
+      color: #000;
+    }
   }
 }

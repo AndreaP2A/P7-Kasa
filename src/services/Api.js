@@ -1,4 +1,5 @@
 import logements from "../data/logements.json";
+import collapseAboutData from "../data/collapse_about.json";
 
 /**
  * Fetch all houses.
@@ -15,4 +16,12 @@ export const getAllHouses = () => {
  */
 export const getHouseById = (id) => {
   return logements.find((logement) => logement.id === id) || null;
+};
+
+/**
+ * Fetch all collapse data (About page).
+ * @returns {Array} List of all collapse about data.
+ */
+export const getCollapseAboutData = () => {
+  return collapseAboutData;
 };
