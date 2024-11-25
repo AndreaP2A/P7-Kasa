@@ -5,7 +5,7 @@ import starInactive from "../../assets/img/starinactive.png";
 function Rating({ rating }) {
   return (
     <div className="rating">
-      {[...Array(5)].map((star, index) => {
+      {[...Array(5)].map((_, index) => {
         const ratingNumber = index + 1;
         return (
           <img
