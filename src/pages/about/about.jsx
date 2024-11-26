@@ -9,7 +9,7 @@ function About() {
   return (
     <div className="about">
       <Banner backgroundImage={heroBannerAbout} />
-      <Collapse items={collapseAboutData} />
+      <Collapse items={collapseAboutData} className="about_page" />
     </div>
   );
 }
