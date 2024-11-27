@@ -1,7 +1,7 @@
 import "./_house.scss";
 import Rating from "../../components/rating/rating";
 import Host from "../../components/host/host";
-// import Carousel from "../../components/carousel/carousel";
+import Carousel from "../../components/carousel/carousel";
 import Tag from "../../components/tag/tag";
 import Collapse from "../../components/collapse/collapse";
 
@@ -10,6 +10,7 @@ function House({ house }) {
 
   return (
     <div className="house">
+      <Carousel pictures={house.pictures} />
       <div className="house_details">
         <div className="house_details_name">
           <h1>{house.title}</h1>
