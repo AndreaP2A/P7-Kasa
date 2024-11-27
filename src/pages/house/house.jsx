@@ -9,21 +9,23 @@ function House({ house }) {
   const collapseItems = houseCollapseItems(house);
 
   return (
-    <div className="house">
+    <main className="house">
       <Carousel pictures={house.pictures} />
-      <div className="house_details">
-        <div className="house_details_name">
-          <h1>{house.title}</h1>
-          <p>{house.location}</p>
+      <section className="house_info">
+        <div className="house_details">
+          <div className="house_details_name">
+            <h1>{house.title}</h1>
+            <p>{house.location}</p>
+          </div>
+          <Tag tags={house.tags} className="house_details_tag" />
         </div>
-        <Host host={house.host} className="house_details_host" />
-      </div>
-      <div className="house_data">
-        <Tag tags={house.tags} className="" />
-        <Rating rating={house.rating} />
-      </div>
+        <div className="house_data">
+          <Host host={house.host} className="house_data_host" />
+          <Rating rating={house.rating} className="house_data_rating" />
+        </div>
+      </section>
       <Collapse items={collapseItems} className="house_page" />
-    </div>
+    </main>
   );
 }
 

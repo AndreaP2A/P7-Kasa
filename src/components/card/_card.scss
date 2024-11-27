@@ -1,6 +1,6 @@
 .gallery_card {
-  flex: 1 1 340px;
-  max-width: 340px;
+  flex: 1 1 335px;
+  max-width: 335px;
   height: 340px;
   border-radius: 10px;
   background-size: cover;
@@ -11,6 +11,10 @@
   @media screen and (max-width: 1024px) {
     width: 100%;
     max-width: 100%;
+  }
+  @media screen and (max-width: 768px) {
+    flex: none;
+    height: 255px;
   }
 
   &_overlay {
