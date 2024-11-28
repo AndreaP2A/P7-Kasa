@@ -18,7 +18,12 @@ import { getHouseById } from "../services/Api";
 // APP ROUTES
 const AppRouter = () => {
   return (
-    <Router>
+    <Router
+      future={{
+        v7_startTransition: true,
+        v7_relativeSplatPath: true,
+      }}
+    >
       <Routes>
         <Route path="/" element={<Navigate replace to="/home" />} />
         <Route path="/home" element={<Home />} />
