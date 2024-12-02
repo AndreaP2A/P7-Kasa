@@ -1,7 +1,7 @@
 import "./_home.scss";
 import Banner from "../../components/banner/banner";
 import Gallery from "../../components/gallery/gallery";
-import heroBanner from "../../../../my-app/src/assets/img/herobanner.webp";
+import heroBanner from "../../assets/img/herobanner.webp";
 
 function Home() {
   return (
