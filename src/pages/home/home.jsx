@@ -11,7 +11,6 @@ function Home() {
         bannerTextPart2="partout et ailleurs"
         backgroundImage={heroBanner}
         withGradient={true}
-        b
       />
       <Gallery />
     </div>
