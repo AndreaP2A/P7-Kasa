@@ -1,8 +1,5 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@use "../../sass/_variables.scss";
+@use "../../sass/_mixins.scss";
 
 .collapse_container {
   display: flex;
@@ -17,13 +14,11 @@
     overflow: hidden;
     width: 100%;
     &_title {
-      display: flex;
-      justify-content: space-between;
+      @include mixins.flex-between;
+      color: variables.$white;
+      background: variables.$primary-color;
       align-items: center;
       border-radius: 5px;
-      color: #fff;
-      font-family: Montserrat;
-      background: #ff6060;
       width: 100%;
       padding: 10px 20px 10px 15px;
 
@@ -43,9 +38,7 @@
 
     &_text {
       width: 100%;
-      font-family: Montserrat;
-      font-size: 18px;
-      font-weight: 400;
+      @include mixins.font-style(18px, 400);
       text-align: justify;
       opacity: 0;
       max-height: 0;

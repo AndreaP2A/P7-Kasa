@@ -1,3 +1,6 @@
+@use "../../sass/_variables.scss";
+@use "../../sass/_mixins.scss";
+
 .gallery_card {
   flex: 1 1 335px;
   max-width: 335px;
@@ -18,11 +21,10 @@
   }
 
   &_overlay {
+    @include mixins.size(100%, 100%);
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
     display: flex;
     align-items: end;
     background: linear-gradient(
@@ -35,10 +37,8 @@
     padding: 15px;
 
     & h2 {
-      color: #fff;
-      font-family: Montserrat;
-      font-size: 18px;
-      font-weight: 700;
+      color: variables.$white;
+      @include mixins.font-style(18px, 700);
       width: 70%;
     }
   }

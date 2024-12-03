@@ -1,13 +1,14 @@
+@use "../../sass/_variables.scss";
+@use "../../sass/_mixins.scss";
+
 .rating {
   display: flex;
 
   .rating_star {
-    width: 36px;
-    height: 36px;
+    @include mixins.size(36px, 36px);
 
     @media screen and (max-width: 500px) {
-      width: 18px;
-      height: 18px;
+      @include mixins.size(18px, 18px);
     }
   }
 }

@@ -1,3 +1,6 @@
+@use "../../sass/_variables.scss";
+@use "../../sass/_mixins.scss";
+
 .tags {
   display: flex;
   flex-wrap: wrap;
@@ -9,7 +12,7 @@
     justify-content: center;
     height: 25px;
     border-radius: 15px;
-    background: #ff6060;
+    background: variables.$primary-color;
     color: white;
     text-align: center;
     font-family: Montserrat;

@@ -1,26 +1,24 @@
+@use "../../sass/_variables.scss";
+@use "../../sass/_mixins.scss";
+
 .host {
   display: flex;
   align-items: center;
   gap: 10px;
-  height: 64px;
-  width: 167px;
+  @include mixins.size(167px, 64px);
 
   &__name {
-    color: #ff6060;
+    color: variables.$primary-color;
     text-align: right;
-    font-family: Montserrat;
-    font-size: 18px;
-    font-weight: 500;
+    @include mixins.font-style(18px, 500);
   }
 
   &__avatar {
-    width: 64px;
-    height: 64px;
+    @include mixins.size(64px, 64px);
     border-radius: 50%;
     overflow: hidden;
     img {
-      width: 100%;
-      height: 100%;
+      @include mixins.size(100%, 100%);
       object-fit: cover;
     }
   }

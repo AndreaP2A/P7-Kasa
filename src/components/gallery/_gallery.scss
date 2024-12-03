@@ -1,18 +1,13 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@use "../../sass/_variables.scss";
+@use "../../sass/_mixins.scss";
 
 .gallery {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include mixins.flex-center;
   flex-wrap: wrap;
   gap: 60px;
   width: 100%;
   border-radius: 25px;
-  background: #f6f6f6;
+  background: variables.$cream;
   padding: 50px 0;
 
   @media screen and (max-width: 1024px) {

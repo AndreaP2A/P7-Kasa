@@ -1,3 +1,6 @@
+@use "../../sass/_variables.scss";
+@use "../../sass/_mixins.scss";
+
 .house {
   display: flex;
   flex-direction: column;
@@ -10,8 +13,7 @@
   }
 
   &_info {
-    display: flex;
-    justify-content: space-between;
+    @include mixins.flex-between;
 
     @media screen and (max-width: 768px) {
       flex-direction: column;
@@ -21,10 +23,9 @@
   }
 
   &_details {
-    display: flex;
+    @include mixins.flex-between;
     flex-direction: column;
     gap: 20px;
-    justify-content: space-between;
 
     @media screen and (max-width: 768px) {
       gap: 15px;
@@ -35,10 +36,8 @@
       flex-direction: column;
       gap: 5px;
       h1 {
-        color: #ff6060;
-        font-size: 36px;
-        font-style: normal;
-        font-weight: 500;
+        color: variables.$primary-color;
+        @include mixins.font-style(36px, 500);
         line-height: 142.6%;
         @media screen and (max-width: 768px) {
           font-size: 20px;
@@ -81,8 +80,7 @@
     max-width: 1023px;
     border-radius: 5px;
     &_title {
-      font-weight: 700;
-      font-size: 18px;
+      @include mixins.font-style(18px, 700);
     }
     &_text {
       li {

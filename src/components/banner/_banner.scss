@@ -1,16 +1,14 @@
+@use "../../sass/_variables.scss";
+@use "../../sass/_mixins.scss";
+
 .banner,
 .banner_about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 223px;
+  @include mixins.flex-center;
+  @include mixins.size(100%, 223px);
+  @include mixins.font-style(48px, 700);
+  color: variables.$white;
   background-size: cover;
   background-position: center;
-  color: #fff;
-  font-size: 48px;
-  font-weight: 700;
-  font-family: "Montserrat";
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
 

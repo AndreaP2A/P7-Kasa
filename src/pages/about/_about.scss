@@ -1,3 +1,6 @@
+@use "../../sass/_variables.scss";
+@use "../../sass/_mixins.scss";
+
 .about {
   display: flex;
   flex-direction: column;

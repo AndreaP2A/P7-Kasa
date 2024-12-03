@@ -1,3 +1,6 @@
+@use "../../sass/_variables.scss";
+@use "../../sass/_mixins.scss";
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -7,7 +10,7 @@
   width: 100%;
   height: 200px;
   gap: 28px;
-  background: #000;
+  background: variables.$black;
   color: white;
   text-align: center;
   font-family: Montserrat;
