@@ -1,8 +1,17 @@
 import "./_card.scss";
 import { NavLink } from "react-router-dom";
 
+/**
+ * Card component that displays a house with a dynamic background image.
+ *
+ * @param {Object} props - The component props.
+ * @param {Object} props.house - The house object.
+ * @param {string} props.house.cover - The URL of the house cover image.
+ * @param {string} props.house.id - The unique identifier of the house.
+ * @param {string} props.house.title - The title of the house.
+ * @returns {JSX.Element} The rendered Card component.
+ */
 function Card({ house }) {
-  // DYNAMIC CARD BACKGROUND WITH cover OF THE house --> même principe pour banner !
   const cardStyle = {
     backgroundImage: `url(${house.cover})`,
   };

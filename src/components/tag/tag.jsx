@@ -1,5 +1,12 @@
 import "./_tag.scss";
 
+/**
+ * Component to render a list of tags.
+ *
+ * @param {Object} props - The component props.
+ * @param {string[]} props.tags - Array of tag strings to be displayed.
+ * @returns {JSX.Element} The rendered component.
+ */
 function Tag({ tags }) {
   return (
     <div className="tags">

@@ -15,11 +15,18 @@ import About from "../pages/about/about";
 import Error404 from "../pages/error404/error404";
 import { getHouseById } from "../services/Api";
 
-// APP ROUTES
+/**
+ * AppRouter component sets up the routing for the application using React Router.
+ * It includes routes for home, house details, about, and a catch-all for 404 errors.
+ *
+ * @component
+ * @returns {JSX.Element} The Router component with defined routes.
+ */
 const AppRouter = () => {
   return (
     <Router
       future={{
+        // Future proofing (otherwise : warning flags)
         v7_startTransition: true,
         v7_relativeSplatPath: true,
       }}
@@ -35,7 +42,12 @@ const AppRouter = () => {
   );
 };
 
-// REDIRECTION VERS error404 SI id N'EXISTE PAS
+/**
+ * HouseWrapper component fetches house details based on the URL parameter `id`.
+ * If the house is not found, it redirects to the 404 error page.
+ *
+ * @returns {JSX.Element} The House component with the house details or a Navigate component for redirection.
+ */
 const HouseWrapper = () => {
   const { id } = useParams();
   const house = getHouseById(id);

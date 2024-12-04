@@ -2,10 +2,17 @@ import "./_header.scss";
 import logo from "../../assets/img/logo.png";
 import { useState, useEffect } from "react";
 
+/**
+ * Header component that displays the logo and navigation links.
+ * The active link is highlighted based on the current URL pathname.
+ *
+ * @component
+ *
+ */
 function Header() {
   const [activeLink, setActiveLink] = useState("/home");
 
-  // Update active link (underline) based on current URL pathname
+  // Update active link (underline) based on current URL pathname (here, home or about)
   useEffect(() => {
     setActiveLink(window.location.pathname);
   }, []);
@@ -17,7 +24,9 @@ function Header() {
   return (
     <header className="header">
       <div className="header_logo">
-        <img src={logo} alt="Logo" />
+        <a href="/home">
+          <img src={logo} alt="Logo" />
+        </a>
       </div>
       <nav className="header_navbar">
         <ul>

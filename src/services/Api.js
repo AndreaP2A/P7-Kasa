@@ -12,7 +12,7 @@ export const getAllHouses = () => {
 /**
  * Fetch a house by its ID.
  * @param {string} id - The ID of the house.
- * @returns {Object|null} The house object if found, otherwise null.
+ * @returns {Object|null} The house object (if found, otherwise null).
  */
 export const getHouseById = (id) => {
   return logements.find((logement) => logement.id === id) || null;
@@ -24,20 +24,4 @@ export const getHouseById = (id) => {
  */
 export const getCollapseAboutData = () => {
   return collapseAboutData;
-};
-
-/**
- * Fetch the equipments and description of a house by its ID.
- * @param {string} id - The ID of the house.
- * @returns {Object|null} An object containing the equipments and description if found, otherwise null.
- */
-export const getHouseDetailsById = (id) => {
-  const house = getHouseById(id);
-  if (house) {
-    return {
-      equipments: house.equipments,
-      description: house.description,
-    };
-  }
-  return null;
 };

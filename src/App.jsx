@@ -7,6 +7,10 @@ import AppRouter from "./routes/router";
 import Header from "./layouts/header/header";
 import Footer from "./layouts/footer/footer";
 
+/**
+ * Main application component that renders the header, router, and footer.
+ * @component
+ */
 function App() {
   return (
     <div className="App">

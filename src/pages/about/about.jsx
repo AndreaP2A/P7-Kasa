@@ -4,6 +4,12 @@ import Collapse from "../../components/collapse/collapse";
 import heroBannerAbout from "../../assets/img/herobannerabout.webp";
 import { getCollapseAboutData } from "../../services/Api";
 
+/**
+ * About component renders the About page with a banner and collapsible sections.
+ *
+ * @component
+ * @returns {JSX.Element} The rendered About page component.
+ */
 function About() {
   const collapseAboutData = getCollapseAboutData();
   return (
