@@ -17,6 +17,7 @@ function Header() {
     setActiveLink(window.location.pathname);
   }, []);
 
+  // Function to handle navigation link click event and update active link
   const handleLinkClick = (path) => {
     setActiveLink(path);
   };
