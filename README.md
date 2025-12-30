@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# 🏠 Kasa — Application de Location Immobilière entre Particuliers
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![SASS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Kasa est une plateforme moderne de location de logements entre particuliers. Ce projet marque une étape clé dans l'apprentissage de React, en mettant l'accent sur le développement d'une interface dynamique, modulaire et parfaitement responsive, tout en respectant une charte graphique rigoureuse fournie sur Figma.
 
-## Available Scripts
+📌 Présentation du Projet
+Dans le cadre de cette refonte totale, l'enjeu principal était de migrer l'ancienne plateforme ASP.NET vers une infrastructure JavaScript moderne basée sur React. La mission consistait à développer l'intégralité de l'application (front-end) en s'appuyant sur des composants réutilisables et une navigation fluide gérée côté client.
 
-In the project directory, you can run:
+🎯 Objectifs techniques
+- **Architecture React** : Conception d'une application modulaire décomposée en composants atomiques et layouts réutilisables.
+- **Routage Dynamique** : Mise en œuvre de `react-router-dom` (version 6) pour orchestrer la navigation entre la page d'accueil, les fiches logements, la page "À propos" et la gestion des erreurs 404.
+- **Hooks & State Management** : Utilisation des React Hooks (`useState`, `useEffect`, `useParams`) pour piloter la logique d'affichage et la récupération des données.
+- **SASS (Syntactically Awesome Style Sheets)** : Implémentation d'une structure CSS robuste utilisant des variables, des mixins et une organisation modulaire pour garantir la maintenabilité du design.
+- **Fidélité au Design (Pixel Perfect)** : Intégration rigoureuse des maquettes Figma, incluant les animations et les comportements interactifs (slideshow, collapse).
 
-### `npm start`
+✨ Fonctionnalités
+Le projet propose une expérience utilisateur complète et interactive :
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+🖼️ Galerie / Slideshow Dynamique
+Un composant de navigation d'images intuitif permettant de faire défiler les photos d'un logement. Il gère intelligemment l'affichage des flèches et du compteur selon le nombre total d'images.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🔽 Menus Accordéons (Collapse)
+Des composants interactifs et accessibles permettant d'axer l'affichage du contenu (descriptions et équipements), utilisés sur les fiches logements et la page "À propos".
 
-### `npm test`
+⭐️ Système de Notation
+Affichage dynamique d'une note sur 5 étoiles pour chaque logement, reflétant précisément les données issues du catalogue.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+📱 Design 100% Responsive
+L'interface a été entièrement optimisée pour offrir une navigation confortable sur mobile, tablette et desktop.
 
-### `npm run build`
+🚀 Installation et Utilisation
+Prérequis
+- [Node.js](https://nodejs.org/) (version 14 ou supérieure recommandée)
+- Un gestionnaire de paquets (NPM ou Yarn)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Installation locale
+1. Clonez le dépôt :
+   ```bash
+   git clone https://github.com/AndreaP2A/P7-Kasa.git
+   ```
+2. Accédez au dossier :
+   ```bash
+   cd P7-Kasa/my-app
+   ```
+3. Installez les dépendances :
+   ```bash
+   npm install
+   ```
+4. Lancez l'application en mode développement :
+   ```bash
+   npm start
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+🛠️ Structure du projet
+L'architecture suit une logique modulaire orientée composants :
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+.
+├── public/                 # Assets publics (index.html, favicon)
+├── src/
+│   ├── assets/             # Images et logos du projet
+│   ├── components/         # Composants UI (Card, Rating, Slideshow, Collapse...)
+│   ├── data/               # Données JSON des logements
+│   ├── layouts/            # Composants de structure (Header, Footer)
+│   ├── pages/              # Vue des pages (Home, House, About, Error404)
+│   ├── routes/             # Configuration de React Router
+│   ├── sass/               # Fichiers sources SASS (Base, Utils, Components...)
+│   ├── services/           # Logique de récupération de données
+│   ├── App.jsx             # Composant racine
+│   └── index.jsx           # Point d'entrée de l'application
+└── package.json            # Dépendances et scripts
 
-### `npm run eject`
+🌐 Aperçu en ligne
+Le projet est accessible en ligne via GitHub Pages : 👉 [Consulter la démo Kasa](https://andreap2a.github.io/P7-Kasa/)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+🎓 Contexte Pédagogique
+Ce projet constitue le 7ème projet pratique du parcours Développeur d'application (CDA) JavaScript / React (Bac+3/+4) chez OpenClassrooms. Il valide la maîtrise des concepts fondamentaux de React et la capacité à construire une application web moderne de A à Z.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+👨‍💻 Auteur
+Andréa PORCHE
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+GitHub : [@AndreaP2A](https://github.com/AndreaP2A)
+LinkedIn : [Andrea Porche](https://www.linkedin.com/in/andrea-porche-2a/)
+Email : [andrea.porche2a@gmail.com](mailto:andrea.porche2a@gmail.com)
