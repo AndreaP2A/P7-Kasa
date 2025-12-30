@@ -9,37 +9,37 @@
 
 Kasa est une plateforme moderne de location de logements entre particuliers. Ce projet marque une étape clé dans l'apprentissage de React, en mettant l'accent sur le développement d'une interface dynamique, modulaire et parfaitement responsive, tout en respectant une charte graphique rigoureuse fournie sur Figma.
 
-📌 Présentation du Projet
+## 📌 Présentation du Projet
 Dans le cadre de cette refonte totale, l'enjeu principal était de migrer l'ancienne plateforme ASP.NET vers une infrastructure JavaScript moderne basée sur React. La mission consistait à développer l'intégralité de l'application (front-end) en s'appuyant sur des composants réutilisables et une navigation fluide gérée côté client.
 
-🎯 Objectifs techniques
+## 🎯 Objectifs techniques
 - **Architecture React** : Conception d'une application modulaire décomposée en composants atomiques et layouts réutilisables.
 - **Routage Dynamique** : Mise en œuvre de `react-router-dom` (version 6) pour orchestrer la navigation entre la page d'accueil, les fiches logements, la page "À propos" et la gestion des erreurs 404.
 - **Hooks & State Management** : Utilisation des React Hooks (`useState`, `useEffect`, `useParams`) pour piloter la logique d'affichage et la récupération des données.
 - **SASS (Syntactically Awesome Style Sheets)** : Implémentation d'une structure CSS robuste utilisant des variables, des mixins et une organisation modulaire pour garantir la maintenabilité du design.
 - **Fidélité au Design (Pixel Perfect)** : Intégration rigoureuse des maquettes Figma, incluant les animations et les comportements interactifs (slideshow, collapse).
 
-✨ Fonctionnalités
+## ✨ Fonctionnalités
 Le projet propose une expérience utilisateur complète et interactive :
 
-🖼️ Galerie / Slideshow Dynamique
+### 🖼️ Galerie / Slideshow Dynamique
 Un composant de navigation d'images intuitif permettant de faire défiler les photos d'un logement. Il gère intelligemment l'affichage des flèches et du compteur selon le nombre total d'images.
 
-🔽 Menus Accordéons (Collapse)
+### 🔽 Menus Accordéons (Collapse)
 Des composants interactifs et accessibles permettant d'axer l'affichage du contenu (descriptions et équipements), utilisés sur les fiches logements et la page "À propos".
 
-⭐️ Système de Notation
+### ⭐️ Système de Notation
 Affichage dynamique d'une note sur 5 étoiles pour chaque logement, reflétant précisément les données issues du catalogue.
 
-📱 Design 100% Responsive
+### 📱 Design 100% Responsive
 L'interface a été entièrement optimisée pour offrir une navigation confortable sur mobile, tablette et desktop.
 
-🚀 Installation et Utilisation
-Prérequis
+## 🚀 Installation et Utilisation
+### Prérequis
 - [Node.js](https://nodejs.org/) (version 14 ou supérieure recommandée)
 - Un gestionnaire de paquets (NPM ou Yarn)
 
-Installation locale
+### Installation locale
 1. Clonez le dépôt :
    ```bash
    git clone https://github.com/AndreaP2A/P7-Kasa.git
@@ -57,9 +57,10 @@ Installation locale
    npm start
    ```
 
-🛠️ Structure du projet
+## 🛠️ Structure du projet
 L'architecture suit une logique modulaire orientée composants :
 
+```text
 .
 ├── public/                 # Assets publics (index.html, favicon)
 ├── src/
@@ -74,14 +75,15 @@ L'architecture suit une logique modulaire orientée composants :
 │   ├── App.jsx             # Composant racine
 │   └── index.jsx           # Point d'entrée de l'application
 └── package.json            # Dépendances et scripts
+```
 
-🌐 Aperçu en ligne
+## 🌐 Aperçu en ligne
 Le projet est accessible en ligne via GitHub Pages : 👉 [Consulter la démo Kasa](https://andreap2a.github.io/P7-Kasa/)
 
-🎓 Contexte Pédagogique
+## 🎓 Contexte Pédagogique
 Ce projet constitue le 7ème projet pratique du parcours Développeur d'application (CDA) JavaScript / React (Bac+3/+4) chez OpenClassrooms. Il valide la maîtrise des concepts fondamentaux de React et la capacité à construire une application web moderne de A à Z.
 
-👨‍💻 Auteur
+## 👨‍💻 Auteur
 Andréa PORCHE
 
 GitHub : [@AndreaP2A](https://github.com/AndreaP2A)
