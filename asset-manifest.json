@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/P7-Kasa/static/css/main.91222551.css",
-    "main.js": "/P7-Kasa/static/js/main.4002a17a.js",
+    "main.js": "/P7-Kasa/static/js/main.59cfb8c5.js",
     "static/media/herobannerabout.webp": "/P7-Kasa/static/media/herobannerabout.a8db05c459fbadc2a3bd.webp",
     "static/media/herobanner.webp": "/P7-Kasa/static/media/herobanner.8d88244a9b6843e24f5d.webp",
     "index.html": "/P7-Kasa/index.html",
     "main.91222551.css.map": "/P7-Kasa/static/css/main.91222551.css.map",
-    "main.4002a17a.js.map": "/P7-Kasa/static/js/main.4002a17a.js.map"
+    "main.59cfb8c5.js.map": "/P7-Kasa/static/js/main.59cfb8c5.js.map"
   },
   "entrypoints": [
     "static/css/main.91222551.css",
-    "static/js/main.4002a17a.js"
+    "static/js/main.59cfb8c5.js"
   ]
 }
