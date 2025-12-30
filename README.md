@@ -78,7 +78,7 @@ L'architecture suit une logique modulaire orientée composants :
 ```
 
 ## 🌐 Aperçu en ligne
-Le projet est accessible en ligne via GitHub Pages : 👉 [Consulter la démo Kasa](https://andreap2a.github.io/P7-Kasa/)
+Le projet est accessible en ligne via GitHub Pages : 👉 [Consulter la démo Kasa](https://andreap2a.github.io/P7-Kasa/home)
 
 ## 🎓 Contexte Pédagogique
 Ce projet constitue le 7ème projet pratique du parcours Développeur d'application (CDA) JavaScript / React (Bac+3/+4) chez OpenClassrooms. Il valide la maîtrise des concepts fondamentaux de React et la capacité à construire une application web moderne de A à Z.
